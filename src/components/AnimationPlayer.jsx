@@ -7,11 +7,11 @@ const AnimationPlayer = ({ animationData }) => {
   const animation = useRef();
 
   useEffect(() => {
-    console.log('Received animationData:', animationData); // Log received data
+    console.log('Received animationData:', animationData);
 
     if (animationData) {
       if (animation.current) {
-        animation.current.destroy(); // Destroy previous animation if any
+        animation.current.destroy();
       }
       animation.current = lottie.loadAnimation({
         container: container.current,
@@ -32,7 +32,7 @@ const AnimationPlayer = ({ animationData }) => {
   return (
     <div className="p-6 mx-auto bg-white rounded-xl shadow-md flex flex-col items-center space-x-4">
       <div ref={container} className="w-full h-96" />
-      <ExportButton animationData={animationData} /> {/* Include the ExportButton component */}
+      <ExportButton animationData={animationData} />
     </div>
   );
 };

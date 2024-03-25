@@ -6,7 +6,6 @@ import AnimationEditor from './components/AnimationEditor';
 const App = () => {
   const [animationData, setAnimationData] = useState(null);
 
-  // Function to handle file selection
   const handleFileSelect = async (file) => {
     if (!file) {
       console.error('No file selected');
@@ -21,7 +20,6 @@ const App = () => {
     }
   };
 
-  // Function to convert file to JSON
   const convertFileToJson = (file) => {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
@@ -40,7 +38,6 @@ const App = () => {
     });
   };
 
-  // Function to handle animation updates
   const handleAnimationUpdate = (updatedAnimationData) => {
     setAnimationData(updatedAnimationData);
   };
