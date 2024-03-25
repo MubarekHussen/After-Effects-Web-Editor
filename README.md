@@ -25,4 +25,3 @@ To utilize this project:
 ### User Interface Preview
 
 ![Animation Editor Interface](./Screen-record/screen-capture.gif)
-![Animation Editor Interface](./Screen-record/Screenshot%20from%202024-03-25%2018-23-56.png)
